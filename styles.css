@@ -1,26 +1,55 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: monospace;
+    color: #D9551C;
 }
 
 body {
     display: flex;
     flex-direction: column;
+    background-color: #080b0c;
+        
+}
+.hero img,
+.card img {
+    border-radius: 20px;
+}
+
+.card p {
+    font-size: 18px;
+    padding: 18px;
 }
 
 .header {
     color: white;
     font-weight: bold;
     display: flex;
-    background-color: blue;
     justify-content: space-between;
-    padding: 15px;
+    align-items: center;
+    padding: 12px;
+    margin-bottom: 50px;
+    background-color:rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.Logo {
+    margin-left: 30px;
     font-size: 20px;
 }
 
+li {
+    font-size: 20px;
+    padding-right: 60px;
+    margin-left: 15px;
+}
+
+
 .hero {
-    background-color: brown;
+    margin-top: 8%;
     display: flex;
     justify-content: space-around;
     flex: 1;
@@ -31,16 +60,20 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 700px;
+    max-width: 800px;
     gap: 20px;
-    font-size: 24px;
+    font-size: 22px;
 }
 
 .button {
-
     justify-content: flex-start;
     max-width: 100px;
     font-size: 18px;
+    align-self: flex-end;
+    margin-right: 50px;
+    padding: 10px;
+    border-radius: 20px;
+
 }
 
 ul {
@@ -48,16 +81,15 @@ ul {
     list-style: none;
 }
 
-li {
-    margin-left: 15px;
+li:hover {
+    color: white;
 }
 
 .cards {
-    background-color: darkcyan;
     padding: 25px;
 }
 
-.cardtitle {
+.cardtitle {    
     font-size: 24px;
     font-weight: bold;
     text-align: center;
@@ -76,7 +108,8 @@ li {
 }
 
 .heroimg {
-    max-width: 650px;
+    max-width: 850px;
+    max-height: 1000px;
 }
 
 .cardimg {
@@ -84,31 +117,83 @@ li {
 }
 
 .longmsg {
+    margin-top: 5%;
+    margin-bottom: 5%;
     padding: 25px;
-    background-color: chocolate;
+    height: 350px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    background-image: url("images/long2.jpg");
+    background-size: cover;
+    background-position: 50% 75%;
+    
 }
 
 .longmsgcontainer {
     display: flex;
-    flex-direction: column;
+    flex: 0 1 1;
+    justify-content: center;
     align-items: center;
-    width: 500px;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    padding: 40px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.lngmsgfrst,
+.lngmsgscnd {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.lngmsgscnd {
+    margin-top: 20px;
+    margin-left: 60%;
 }
 
 .ad {
-    background-color: crimson;
     padding: 25px;
     display: flex;
     justify-content: center;
     gap: 20px;
+    background-color: #101719;
+    max-width: 900px;
+    margin: auto;
+    border-radius: 20px;
+    margin-bottom: 5%;
+}
+
+.adbutton,
+.button {
+    color: black;
+    background-color: #D9551C;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+.adbutton {
+    height: 60px;
+    align-self: center;
+}
+
+.admsg1 {
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.admsg2 {
+    font-size: 14px;
 }
 
 .footer {
-    background-color: darkorchid;
-    padding: 25px;
+    padding: 10px;
     text-align: center;
-    font-size: 25px;
+    font-size: 15px;
     font-weight: bold;
+    background-color:rgba(0, 0, 0, 0.5);
+
 }
